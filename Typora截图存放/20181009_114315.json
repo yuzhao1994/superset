@@ -1,0 +1,1068 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "dashboard_title": "\u4e00\u6708\u4efd\u4ea7\u54c1\u4fe1\u606f", 
+                "slug": null, 
+                "json_metadata": "{\"remote_id\": 2}", 
+                "description": null, 
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "created_by_fk": 1, 
+                            "datasource_id": 2, 
+                            "viz_type": "dist_bar", 
+                            "slice_name": "\u4e00\u6708\u4efd\u4ea7\u54c1\u9500\u552e\u91d1\u989d", 
+                            "perm": null, 
+                            "datasource_type": "kylin", 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:59:32"
+                            }, 
+                            "params": "{\"url_params\": {}, \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"y_axis_label\": \"\", \"row_limit\": 50, \"remote_id\": 5, \"reduce_x_ticks\": false, \"filters\": [], \"show_controls\": false, \"granularity_sqla\": \"DW_VIEW_FACT_VALUE.ORDER_DATE_DAY\", \"viz_type\": \"dist_bar\", \"since\": \"2018-01-01T00:00:00\", \"x_axis_label\": \"\", \"order_bars\": false, \"color_scheme\": \"bnbColors\", \"until\": \"2018-01-31T00:00:00\", \"columns\": [], \"schema\": \"cube_value\", \"show_bar_value\": false, \"y_axis_format\": \".3s\", \"metrics\": [\"\\u9500\\u552e\\u91d1\\u989d\"], \"slice_id\": 5, \"where\": \"\", \"database_name\": \"proj_MCD\", \"show_legend\": true, \"groupby\": [\"DW_VIEW_FACT_VALUE.PRODUCT_NAME\"], \"datasource\": \"2__kylin\", \"datasource_name\": \"cube_value\", \"contribution\": false, \"time_grain_sqla\": null, \"having\": \"\", \"bar_stacked\": false}", 
+                            "changed_by_fk": 1, 
+                            "datasource_name": "cube_value", 
+                            "cache_timeout": null, 
+                            "id": 5, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-09T11:43:15"
+                            }, 
+                            "description": null
+                        }
+                    }, 
+                    {
+                        "__Slice__": {
+                            "created_by_fk": 1, 
+                            "datasource_id": 2, 
+                            "viz_type": "dist_bar", 
+                            "slice_name": "\u4e00\u6708\u4efd\u4ea7\u54c1\u8ba2\u5355\u6570\u91cf", 
+                            "perm": null, 
+                            "datasource_type": "kylin", 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T15:10:24"
+                            }, 
+                            "params": "{\"url_params\": {}, \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"y_axis_label\": \"\", \"row_limit\": 50, \"remote_id\": 6, \"reduce_x_ticks\": false, \"filters\": [], \"show_controls\": false, \"granularity_sqla\": \"DW_VIEW_FACT_VALUE.ORDER_DATE_DAY\", \"viz_type\": \"dist_bar\", \"since\": \"2018-01-01T00:00:00\", \"x_axis_label\": \"\", \"order_bars\": false, \"color_scheme\": \"bnbColors\", \"until\": \"2018-01-31T00:00:00\", \"columns\": [], \"schema\": \"cube_value\", \"show_bar_value\": false, \"y_axis_format\": \".3s\", \"metrics\": [\"\\u8ba2\\u5355\\u6570\\u91cf\"], \"slice_id\": 6, \"where\": \"\", \"database_name\": \"proj_MCD\", \"show_legend\": true, \"groupby\": [\"DW_VIEW_FACT_VALUE.PRODUCT_NAME\"], \"datasource\": \"2__kylin\", \"datasource_name\": \"cube_value\", \"contribution\": false, \"time_grain_sqla\": null, \"having\": \"\", \"bar_stacked\": false}", 
+                            "changed_by_fk": 1, 
+                            "datasource_name": "cube_value", 
+                            "cache_timeout": null, 
+                            "id": 6, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-09T11:43:15"
+                            }, 
+                            "description": null
+                        }
+                    }
+                ], 
+                "position_json": "", 
+                "created_on": {
+                    "__datetime__": "2018-10-08T14:55:42"
+                }, 
+                "css": "", 
+                "changed_by_fk": 1, 
+                "created_by_fk": 1, 
+                "id": 2, 
+                "changed_on": {
+                    "__datetime__": "2018-10-08T14:56:58"
+                }
+            }
+        }
+    ], 
+    "datasources": [
+        {
+            "__KylinDatasource__": {
+                "is_featured": false, 
+                "chunk": "{\"dim_column\": [{\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"CUSTOMER_GENDER\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"CUSTOMER_GENDER\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_CITY_NAME\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"ORDER_CITY_NAME\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_CITY_TIER\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"ORDER_CITY_TIER\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_DATE_DAY\", \"datatype\": \"date\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u8ba2\\u5355\\u65e5\\u671f_\\u65e5\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_DATE_MONTH\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u8ba2\\u5355\\u65e5\\u671f_\\u6708\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_DATE_WEEK\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u8ba2\\u5355\\u65e5\\u671f_\\u5468\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_DATE_YEAR\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u8ba2\\u5355\\u65e5\\u671f_\\u5e74\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_DAY_PART\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u8d2d\\u4e70\\u65f6\\u6bb5\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_ONLINE_OFFLINE\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u7ebf\\u4e0a\\u7ebf\\u4e0b\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_ONLINE_PLATFORM\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u8d2d\\u4e70\\u5e73\\u53f0\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_PARTY_SIZE\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u7528\\u9910\\u4eba\\u6570\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_PAY_PLACE\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u6d88\\u8d39\\u67dc\\u53f0\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_PAY_PLATFORM\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u652f\\u4ed8\\u5e73\\u53f0\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_REGION\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u6d88\\u8d39\\u57ce\\u5e02\\u533a\\u57df\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"ORDER_SOURCE\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u8ba2\\u5355\\u6765\\u6e90\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"PRODUCT_ID\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u4ea7\\u54c1\\u7f16\\u53f7\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"PRODUCT_NAME\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u4ea7\\u54c1\\u540d\\u79f0\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"PRODUCT_TYPE_ALL1\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u4ea7\\u54c1\\u7c7b\\u578b\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"VA_ORDER_FIRST_TYPE\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"VALUE\\u65b0\\u5ba2\\u8ba2\\u5355\\u7c7b\\u578b\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"VA_ORDER_IS_FIRST_NON_VA\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u662f\\u5426\\u975eVALUE\\u65b0\\u5ba2\\u8ba2\\u5355\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"VA_ORDER_IS_FIRST_VA\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u662f\\u5426VALUE\\u65b0\\u5ba2\\u8ba2\\u5355\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"VA_ORDER_IS_MIDTIER\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u662f\\u5426MID_TIER\\u8ba2\\u5355\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"VA_ORDER_IS_REPEAT_ALL\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u662f\\u5426\\u7efc\\u5408\\u590d\\u8d2d\\u8ba2\\u5355\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"VA_ORDER_IS_REPEAT_VA\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u662f\\u5426VALUE\\u7eaf\\u590d\\u8d2d\\u8ba2\\u5355\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"VA_ORDER_IS_SECOND_VA\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"\\u662f\\u5426\\u7b2c\\u4e00\\u6b21VALUE\\u590d\\u8d2d\\u8ba2\\u5355\"}, {\"schema\": \"KYLIN\", \"table\": \"DW_VIEW_FACT_VALUE\", \"column\": \"VA_PRODUCT_TYPE_VA\", \"datatype\": \"varchar(256)\", \"is_derived\": false, \"table_label\": \"DW_VIEW_FACT_VALUE\", \"column_label\": \"VALUE\\u4ea7\\u54c1\\u7c7b\\u578b\"}], \"cube_desc\": {\"partition_date_start\": 0, \"notify_list\": [], \"storage_type\": 99, \"partition_date_end\": 3153600000000, \"null_string\": null, \"override_kylin_properties\": {\"kap.smart.conf.aggGroup.strategy\": \"auto\"}, \"mandatory_dimension_set_list\": [], \"status_need_notify\": [\"ERROR\", \"DISCARDED\", \"SUCCEED\"], \"cuboid_black_list\": [], \"uuid\": \"02d637e5-3b6e-426c-b099-6be3e5c3e2e1\", \"parent_forward\": 3, \"retention_range\": 0, \"version\": \"2.3.0.20505\", \"rowkey\": {\"rowkey_columns\": [{\"column\": \"DW_VIEW_FACT_VALUE.CUSTOMER_GENDER\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_CITY_NAME\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_CITY_TIER\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_DATE_DAY\", \"isShardBy\": false, \"encoding\": \"date\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_DATE_MONTH\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_DATE_WEEK\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_DATE_YEAR\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_DAY_PART\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_OFFLINE\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_PLATFORM\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_PARTY_SIZE\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLACE\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLATFORM\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_REGION\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.ORDER_SOURCE\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.PRODUCT_ID\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.PRODUCT_NAME\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.PRODUCT_TYPE_ALL1\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.VA_ORDER_FIRST_TYPE\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_NON_VA\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_VA\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_MIDTIER\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_ALL\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_VA\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_SECOND_VA\", \"isShardBy\": false, \"encoding\": \"dict\"}, {\"column\": \"DW_VIEW_FACT_VALUE.VA_PRODUCT_TYPE_VA\", \"isShardBy\": false, \"encoding\": \"dict\"}]}, \"aggregation_groups\": [{\"select_rule\": {\"mandatory_dims\": [], \"joint_dims\": [[\"DW_VIEW_FACT_VALUE.ORDER_DATE_DAY\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_WEEK\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_MONTH\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_YEAR\"], [\"DW_VIEW_FACT_VALUE.ORDER_SOURCE\", \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_PLATFORM\", \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLATFORM\", \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLACE\", \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_OFFLINE\", \"DW_VIEW_FACT_VALUE.CUSTOMER_GENDER\"], [\"DW_VIEW_FACT_VALUE.ORDER_CITY_NAME\", \"DW_VIEW_FACT_VALUE.ORDER_CITY_TIER\", \"DW_VIEW_FACT_VALUE.ORDER_REGION\"], [\"DW_VIEW_FACT_VALUE.PRODUCT_TYPE_ALL1\", \"DW_VIEW_FACT_VALUE.VA_PRODUCT_TYPE_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_MIDTIER\", \"DW_VIEW_FACT_VALUE.ORDER_PARTY_SIZE\"], [\"DW_VIEW_FACT_VALUE.VA_ORDER_FIRST_TYPE\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_NON_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_ALL\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_SECOND_VA\", \"DW_VIEW_FACT_VALUE.ORDER_DAY_PART\"]], \"hierarchy_dims\": []}, \"includes\": [\"DW_VIEW_FACT_VALUE.CUSTOMER_GENDER\", \"DW_VIEW_FACT_VALUE.ORDER_CITY_NAME\", \"DW_VIEW_FACT_VALUE.ORDER_CITY_TIER\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_DAY\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_MONTH\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_WEEK\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_YEAR\", \"DW_VIEW_FACT_VALUE.ORDER_DAY_PART\", \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_OFFLINE\", \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_PLATFORM\", \"DW_VIEW_FACT_VALUE.ORDER_PARTY_SIZE\", \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLACE\", \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLATFORM\", \"DW_VIEW_FACT_VALUE.ORDER_REGION\", \"DW_VIEW_FACT_VALUE.ORDER_SOURCE\", \"DW_VIEW_FACT_VALUE.PRODUCT_TYPE_ALL1\", \"DW_VIEW_FACT_VALUE.VA_ORDER_FIRST_TYPE\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_NON_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_MIDTIER\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_ALL\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_SECOND_VA\", \"DW_VIEW_FACT_VALUE.VA_PRODUCT_TYPE_VA\"]}, {\"select_rule\": {\"mandatory_dims\": [\"DW_VIEW_FACT_VALUE.PRODUCT_ID\", \"DW_VIEW_FACT_VALUE.PRODUCT_NAME\", \"DW_VIEW_FACT_VALUE.PRODUCT_TYPE_ALL1\", \"DW_VIEW_FACT_VALUE.VA_PRODUCT_TYPE_VA\"], \"joint_dims\": [[\"DW_VIEW_FACT_VALUE.ORDER_DATE_YEAR\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_MONTH\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_WEEK\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_DAY\"], [\"DW_VIEW_FACT_VALUE.ORDER_CITY_NAME\", \"DW_VIEW_FACT_VALUE.ORDER_CITY_TIER\", \"DW_VIEW_FACT_VALUE.ORDER_REGION\"], [\"DW_VIEW_FACT_VALUE.VA_ORDER_FIRST_TYPE\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_NON_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_MIDTIER\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_ALL\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_SECOND_VA\", \"DW_VIEW_FACT_VALUE.ORDER_DAY_PART\"], [\"DW_VIEW_FACT_VALUE.ORDER_SOURCE\", \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLATFORM\", \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLACE\", \"DW_VIEW_FACT_VALUE.ORDER_PARTY_SIZE\", \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_OFFLINE\", \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_PLATFORM\", \"DW_VIEW_FACT_VALUE.CUSTOMER_GENDER\"]], \"hierarchy_dims\": []}, \"includes\": [\"DW_VIEW_FACT_VALUE.CUSTOMER_GENDER\", \"DW_VIEW_FACT_VALUE.ORDER_CITY_NAME\", \"DW_VIEW_FACT_VALUE.ORDER_CITY_TIER\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_DAY\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_MONTH\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_WEEK\", \"DW_VIEW_FACT_VALUE.ORDER_DATE_YEAR\", \"DW_VIEW_FACT_VALUE.ORDER_DAY_PART\", \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_PLATFORM\", \"DW_VIEW_FACT_VALUE.ORDER_ONLINE_OFFLINE\", \"DW_VIEW_FACT_VALUE.ORDER_PARTY_SIZE\", \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLACE\", \"DW_VIEW_FACT_VALUE.ORDER_PAY_PLATFORM\", \"DW_VIEW_FACT_VALUE.ORDER_REGION\", \"DW_VIEW_FACT_VALUE.ORDER_SOURCE\", \"DW_VIEW_FACT_VALUE.PRODUCT_ID\", \"DW_VIEW_FACT_VALUE.PRODUCT_NAME\", \"DW_VIEW_FACT_VALUE.PRODUCT_TYPE_ALL1\", \"DW_VIEW_FACT_VALUE.VA_ORDER_FIRST_TYPE\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_NON_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_MIDTIER\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_ALL\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_VA\", \"DW_VIEW_FACT_VALUE.VA_ORDER_IS_SECOND_VA\", \"DW_VIEW_FACT_VALUE.VA_PRODUCT_TYPE_VA\"]}], \"engine_type\": 100, \"description\": \"\", \"measures\": [{\"function\": {\"returntype\": \"bigint\", \"parameter\": {\"type\": \"constant\", \"value\": \"1\"}, \"expression\": \"COUNT\"}, \"name\": \"\\u8bb0\\u5f55\\u6570\"}, {\"function\": {\"returntype\": \"bigint\", \"parameter\": {\"type\": \"column\", \"value\": \"DW_VIEW_FACT_VALUE.PRODUCT_QUANTITY\"}, \"expression\": \"SUM\"}, \"name\": \"\\u5546\\u54c1\\u6570\\u91cf\"}, {\"function\": {\"returntype\": \"decimal(22,2)\", \"parameter\": {\"type\": \"column\", \"value\": \"DW_VIEW_FACT_VALUE.PRODUCT_TOTAL_PRICE\"}, \"expression\": \"SUM\"}, \"name\": \"\\u9500\\u552e\\u91d1\\u989d\"}, {\"function\": {\"returntype\": \"hllc(15)\", \"parameter\": {\"type\": \"column\", \"value\": \"DW_VIEW_FACT_VALUE.CUSTOMER_SRC_ID\"}, \"expression\": \"COUNT_DISTINCT\"}, \"name\": \"\\u5ba2\\u6237\\u4eba\\u6570\"}, {\"function\": {\"returntype\": \"hllc(15)\", \"parameter\": {\"type\": \"column\", \"value\": \"DW_VIEW_FACT_VALUE.ORDER_ID\"}, \"expression\": \"COUNT_DISTINCT\"}, \"name\": \"\\u8ba2\\u5355\\u6570\\u91cf\"}, {\"function\": {\"returntype\": \"decimal(22,4)\", \"parameter\": {\"type\": \"column\", \"value\": \"DW_VIEW_FACT_VALUE.VA_ORDER_INTERVAL_DAY\"}, \"expression\": \"SUM\"}, \"name\": \"VALUE\\u8ba2\\u5355\\u590d\\u8d2d\\u95f4\\u9694\\u5929\\u6570\"}], \"last_modified\": 1527513103876, \"hbase_mapping\": {\"column_family\": [{\"name\": \"F1\", \"columns\": [{\"qualifier\": \"M\", \"measure_refs\": [\"\\u8bb0\\u5f55\\u6570\"]}]}, {\"name\": \"F2\", \"columns\": [{\"qualifier\": \"M\", \"measure_refs\": [\"\\u5546\\u54c1\\u6570\\u91cf\"]}]}, {\"name\": \"F3\", \"columns\": [{\"qualifier\": \"M\", \"measure_refs\": [\"\\u9500\\u552e\\u91d1\\u989d\"]}]}, {\"name\": \"F4\", \"columns\": [{\"qualifier\": \"M\", \"measure_refs\": [\"\\u5ba2\\u6237\\u4eba\\u6570\"]}]}, {\"name\": \"F5\", \"columns\": [{\"qualifier\": \"M\", \"measure_refs\": [\"\\u8ba2\\u5355\\u6570\\u91cf\"]}]}, {\"name\": \"F6\", \"columns\": [{\"qualifier\": \"M\", \"measure_refs\": [\"VALUE\\u8ba2\\u5355\\u590d\\u8d2d\\u95f4\\u9694\\u5929\\u6570\"]}]}]}, \"auto_merge_time_ranges\": [], \"is_draft\": false, \"dimensions\": [{\"column\": \"CUSTOMER_GENDER\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"CUSTOMER_GENDER\"}, {\"column\": \"ORDER_CITY_NAME\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"ORDER_CITY_NAME\"}, {\"column\": \"ORDER_CITY_TIER\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"ORDER_CITY_TIER\"}, {\"column\": \"ORDER_DATE_DAY\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u8ba2\\u5355\\u65e5\\u671f_\\u65e5\"}, {\"column\": \"ORDER_DATE_MONTH\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u8ba2\\u5355\\u65e5\\u671f_\\u6708\"}, {\"column\": \"ORDER_DATE_WEEK\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u8ba2\\u5355\\u65e5\\u671f_\\u5468\"}, {\"column\": \"ORDER_DATE_YEAR\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u8ba2\\u5355\\u65e5\\u671f_\\u5e74\"}, {\"column\": \"ORDER_DAY_PART\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u8d2d\\u4e70\\u65f6\\u6bb5\"}, {\"column\": \"ORDER_ONLINE_OFFLINE\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u7ebf\\u4e0a\\u7ebf\\u4e0b\"}, {\"column\": \"ORDER_ONLINE_PLATFORM\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u8d2d\\u4e70\\u5e73\\u53f0\"}, {\"column\": \"ORDER_PARTY_SIZE\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u7528\\u9910\\u4eba\\u6570\"}, {\"column\": \"ORDER_PAY_PLACE\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u6d88\\u8d39\\u67dc\\u53f0\"}, {\"column\": \"ORDER_PAY_PLATFORM\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u652f\\u4ed8\\u5e73\\u53f0\"}, {\"column\": \"ORDER_REGION\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u6d88\\u8d39\\u57ce\\u5e02\\u533a\\u57df\"}, {\"column\": \"ORDER_SOURCE\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u8ba2\\u5355\\u6765\\u6e90\"}, {\"column\": \"PRODUCT_ID\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u4ea7\\u54c1\\u7f16\\u53f7\"}, {\"column\": \"PRODUCT_NAME\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u4ea7\\u54c1\\u540d\\u79f0\"}, {\"column\": \"PRODUCT_TYPE_ALL1\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u4ea7\\u54c1\\u7c7b\\u578b\"}, {\"column\": \"VA_ORDER_FIRST_TYPE\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"VALUE\\u65b0\\u5ba2\\u8ba2\\u5355\\u7c7b\\u578b\"}, {\"column\": \"VA_ORDER_IS_FIRST_NON_VA\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u662f\\u5426\\u975eVALUE\\u65b0\\u5ba2\\u8ba2\\u5355\"}, {\"column\": \"VA_ORDER_IS_FIRST_VA\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u662f\\u5426VALUE\\u65b0\\u5ba2\\u8ba2\\u5355\"}, {\"column\": \"VA_ORDER_IS_MIDTIER\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u662f\\u5426MID_TIER\\u8ba2\\u5355\"}, {\"column\": \"VA_ORDER_IS_REPEAT_ALL\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u662f\\u5426\\u7efc\\u5408\\u590d\\u8d2d\\u8ba2\\u5355\"}, {\"column\": \"VA_ORDER_IS_REPEAT_VA\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u662f\\u5426VALUE\\u7eaf\\u590d\\u8d2d\\u8ba2\\u5355\"}, {\"column\": \"VA_ORDER_IS_SECOND_VA\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"\\u662f\\u5426\\u7b2c\\u4e00\\u6b21VALUE\\u590d\\u8d2d\\u8ba2\\u5355\"}, {\"column\": \"VA_PRODUCT_TYPE_VA\", \"table\": \"DW_VIEW_FACT_VALUE\", \"derived\": null, \"name\": \"VALUE\\u4ea7\\u54c1\\u7c7b\\u578b\"}], \"name\": \"cube_value\", \"dictionaries\": [], \"volatile_range\": 0, \"signature\": \"NI5jovsyW7bdHBgxOUZqxg==\", \"model_name\": \"model_value\"}, \"model_desc\": {\"filter_condition\": \"\", \"lookups\": [], \"capacity\": \"MEDIUM\", \"uuid\": \"b04088b1-c5ce-4e0d-a91c-ea784fbed552\", \"computed_columns\": [], \"description\": \"\", \"partition_desc\": {\"partition_date_start\": 0, \"partition_time_column\": null, \"partition_condition_builder\": \"org.apache.kylin.metadata.model.PartitionDesc$DefaultPartitionConditionBuilder\", \"partition_date_format\": \"yyyy-MM-dd\", \"partition_time_format\": \"\", \"partition_date_column\": \"DW_VIEW_FACT_VALUE.ORDER_DATE_DAY\", \"partition_type\": \"APPEND\"}, \"fact_table\": \"KYLIN.DW_VIEW_FACT_VALUE\", \"metrics\": [\"DW_VIEW_FACT_VALUE.CUSTOMER_SRC_ID\", \"DW_VIEW_FACT_VALUE.ORDER_ID\", \"DW_VIEW_FACT_VALUE.PRODUCT_QUANTITY\", \"DW_VIEW_FACT_VALUE.PRODUCT_TOTAL_PRICE\", \"DW_VIEW_FACT_VALUE.VA_ORDER_INTERVAL_DAY\"], \"dimensions\": [{\"table\": \"DW_VIEW_FACT_VALUE\", \"columns\": [\"CUSTOMER_GENDER\", \"ORDER_CITY_NAME\", \"ORDER_CITY_TIER\", \"ORDER_DATE_DAY\", \"ORDER_DATE_MONTH\", \"ORDER_DATE_WEEK\", \"ORDER_DATE_YEAR\", \"ORDER_DAY_PART\", \"ORDER_ONLINE_OFFLINE\", \"ORDER_ONLINE_PLATFORM\", \"ORDER_PARTY_SIZE\", \"ORDER_PAY_PLACE\", \"ORDER_PAY_PLATFORM\", \"ORDER_REGION\", \"ORDER_SOURCE\", \"PRODUCT_ID\", \"PRODUCT_NAME\", \"PRODUCT_TYPE_ALL1\", \"VA_ORDER_FIRST_TYPE\", \"VA_ORDER_IS_FIRST_NON_VA\", \"VA_ORDER_IS_FIRST_VA\", \"VA_ORDER_IS_MIDTIER\", \"VA_ORDER_IS_REPEAT_ALL\", \"VA_ORDER_IS_REPEAT_VA\", \"VA_ORDER_IS_SECOND_VA\", \"VA_PRODUCT_TYPE_VA\"]}], \"last_modified\": 1526217634164, \"version\": \"2.3.0.20505\", \"multilevel_partition_cols\": [], \"owner\": \"ADMIN\", \"is_draft\": false, \"name\": \"model_value\"}}", 
+                "main_dttm_col": null, 
+                "created_on": {
+                    "__datetime__": "2018-10-08T14:29:31"
+                }, 
+                "created_by_fk": 1, 
+                "id": 2, 
+                "changed_on": {
+                    "__datetime__": "2018-10-08T14:29:31"
+                }, 
+                "cache_timeout": null, 
+                "uuid": "02d637e5-3b6e-426c-b099-6be3e5c3e2e1", 
+                "default_endpoint": null, 
+                "perm": null, 
+                "params": "{\"database_name\": \"proj_MCD\", \"remote_id\": 2}", 
+                "filter_select_enabled": false, 
+                "changed_by_fk": 1, 
+                "columns": [
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 24, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.CUSTOMER_GENDER", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "CUSTOMER_GENDER", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 25, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_CITY_NAME", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "ORDER_CITY_NAME", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 26, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_CITY_TIER", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "ORDER_CITY_TIER", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 27, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-09T10:05:07"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": true, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "date", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_DATE_DAY", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u8ba2\u5355\u65e5\u671f_\u65e5", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 28, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_DATE_MONTH", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u8ba2\u5355\u65e5\u671f_\u6708", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 29, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_DATE_WEEK", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u8ba2\u5355\u65e5\u671f_\u5468", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 30, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_DATE_YEAR", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u8ba2\u5355\u65e5\u671f_\u5e74", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 31, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_DAY_PART", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u8d2d\u4e70\u65f6\u6bb5", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 32, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_ONLINE_OFFLINE", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u7ebf\u4e0a\u7ebf\u4e0b", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 33, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_ONLINE_PLATFORM", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u8d2d\u4e70\u5e73\u53f0", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 34, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_PARTY_SIZE", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u7528\u9910\u4eba\u6570", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 35, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_PAY_PLACE", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u6d88\u8d39\u67dc\u53f0", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 36, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_PAY_PLATFORM", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u652f\u4ed8\u5e73\u53f0", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 37, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_REGION", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u6d88\u8d39\u57ce\u5e02\u533a\u57df", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 38, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.ORDER_SOURCE", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u8ba2\u5355\u6765\u6e90", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 39, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.PRODUCT_ID", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u4ea7\u54c1\u7f16\u53f7", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 40, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.PRODUCT_NAME", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u4ea7\u54c1\u540d\u79f0", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 41, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.PRODUCT_TYPE_ALL1", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u4ea7\u54c1\u7c7b\u578b", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 42, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.VA_ORDER_FIRST_TYPE", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "VALUE\u65b0\u5ba2\u8ba2\u5355\u7c7b\u578b", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 43, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_NON_VA", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u662f\u5426\u975eVALUE\u65b0\u5ba2\u8ba2\u5355", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 44, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.VA_ORDER_IS_FIRST_VA", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u662f\u5426VALUE\u65b0\u5ba2\u8ba2\u5355", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 45, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.VA_ORDER_IS_MIDTIER", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u662f\u5426MID_TIER\u8ba2\u5355", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 46, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_ALL", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u662f\u5426\u7efc\u5408\u590d\u8d2d\u8ba2\u5355", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 47, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.VA_ORDER_IS_REPEAT_VA", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u662f\u5426VALUE\u7eaf\u590d\u8d2d\u8ba2\u5355", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 48, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.VA_ORDER_IS_SECOND_VA", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "\u662f\u5426\u7b2c\u4e00\u6b21VALUE\u590d\u8d2d\u8ba2\u5355", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__KylinColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "avg": false, 
+                            "id": 49, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "created_by_fk": 1, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 1, 
+                            "type": "varchar(256)", 
+                            "column_name": "DW_VIEW_FACT_VALUE.VA_PRODUCT_TYPE_VA", 
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "verbose_name": "VALUE\u4ea7\u54c1\u7c7b\u578b", 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }
+                ], 
+                "description": null, 
+                "metrics": [
+                    {
+                        "__KylinMetric__": {
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "d3format": null, 
+                            "expression": "COUNT (1)", 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "warning_text": null, 
+                            "changed_by_fk": 1, 
+                            "metric_type": "COUNT", 
+                            "is_restricted": false, 
+                            "created_by_fk": 1, 
+                            "verbose_name": "\u8bb0\u5f55\u6570", 
+                            "id": 6, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "metric_name": "\u8bb0\u5f55\u6570"
+                        }
+                    }, 
+                    {
+                        "__KylinMetric__": {
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "d3format": null, 
+                            "expression": "SUM (DW_VIEW_FACT_VALUE.PRODUCT_QUANTITY)", 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "warning_text": null, 
+                            "changed_by_fk": 1, 
+                            "metric_type": "SUM", 
+                            "is_restricted": false, 
+                            "created_by_fk": 1, 
+                            "verbose_name": "\u5546\u54c1\u6570\u91cf", 
+                            "id": 7, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "metric_name": "\u5546\u54c1\u6570\u91cf"
+                        }
+                    }, 
+                    {
+                        "__KylinMetric__": {
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "d3format": null, 
+                            "expression": "SUM (DW_VIEW_FACT_VALUE.PRODUCT_TOTAL_PRICE)", 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "warning_text": null, 
+                            "changed_by_fk": 1, 
+                            "metric_type": "SUM", 
+                            "is_restricted": false, 
+                            "created_by_fk": 1, 
+                            "verbose_name": "\u9500\u552e\u91d1\u989d", 
+                            "id": 8, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "metric_name": "\u9500\u552e\u91d1\u989d"
+                        }
+                    }, 
+                    {
+                        "__KylinMetric__": {
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "d3format": null, 
+                            "expression": "COUNT (DISTINCT DW_VIEW_FACT_VALUE.CUSTOMER_SRC_ID)", 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "warning_text": null, 
+                            "changed_by_fk": 1, 
+                            "metric_type": "COUNT_DISTINCT", 
+                            "is_restricted": false, 
+                            "created_by_fk": 1, 
+                            "verbose_name": "\u5ba2\u6237\u4eba\u6570", 
+                            "id": 9, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "metric_name": "\u5ba2\u6237\u4eba\u6570"
+                        }
+                    }, 
+                    {
+                        "__KylinMetric__": {
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "d3format": null, 
+                            "expression": "COUNT (DISTINCT DW_VIEW_FACT_VALUE.ORDER_ID)", 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "warning_text": null, 
+                            "changed_by_fk": 1, 
+                            "metric_type": "COUNT_DISTINCT", 
+                            "is_restricted": false, 
+                            "created_by_fk": 1, 
+                            "verbose_name": "\u8ba2\u5355\u6570\u91cf", 
+                            "id": 10, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "metric_name": "\u8ba2\u5355\u6570\u91cf"
+                        }
+                    }, 
+                    {
+                        "__KylinMetric__": {
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "d3format": null, 
+                            "expression": "SUM (DW_VIEW_FACT_VALUE.VA_ORDER_INTERVAL_DAY)", 
+                            "created_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "warning_text": null, 
+                            "changed_by_fk": 1, 
+                            "metric_type": "SUM", 
+                            "is_restricted": false, 
+                            "created_by_fk": 1, 
+                            "verbose_name": "VALUE\u8ba2\u5355\u590d\u8d2d\u95f4\u9694\u5929\u6570", 
+                            "id": 11, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-08T14:29:31"
+                            }, 
+                            "metric_name": "VALUE\u8ba2\u5355\u590d\u8d2d\u95f4\u9694\u5929\u6570"
+                        }
+                    }, 
+                    {
+                        "__KylinMetric__": {
+                            "datasource_id": 2, 
+                            "description": null, 
+                            "d3format": null, 
+                            "expression": "COUNT(DISTINCT DW_VIEW_FACT_VALUE.ORDER_DATE_DAY)", 
+                            "created_on": {
+                                "__datetime__": "2018-10-09T10:05:06"
+                            }, 
+                            "warning_text": null, 
+                            "changed_by_fk": 1, 
+                            "metric_type": "count_distinct", 
+                            "is_restricted": false, 
+                            "created_by_fk": 1, 
+                            "verbose_name": null, 
+                            "id": 72, 
+                            "changed_on": {
+                                "__datetime__": "2018-10-09T10:05:06"
+                            }, 
+                            "metric_name": "count_distinct__DW_VIEW_FACT_VALUE.ORDER_DATE_DAY"
+                        }
+                    }
+                ], 
+                "last_modified": {
+                    "__datetime__": "2018-05-28T21:11:43"
+                }, 
+                "offset": 0, 
+                "active": true, 
+                "database": {
+                    "__Database__": {
+                        "expose_in_sqllab": true, 
+                        "password": null, 
+                        "allow_run_sync": true, 
+                        "allow_ctas": false, 
+                        "impersonate_user": false, 
+                        "allow_multi_schema_metadata_fetch": true, 
+                        "allow_dml": false, 
+                        "database_name": "proj_MCD", 
+                        "extra": "{\n    \"metadata_params\": {},\n    \"engine_params\": {}\n}\n", 
+                        "sqlalchemy_uri": "kylin://10.0.0.7:7070/proj_MCD", 
+                        "perm": "[proj_MCD].(id:4)", 
+                        "cache_timeout": null, 
+                        "created_on": {
+                            "__datetime__": "2018-10-08T14:29:27"
+                        }, 
+                        "select_as_create_table_as": false, 
+                        "changed_by_fk": 1, 
+                        "force_ctas_schema": null, 
+                        "allow_run_async": false, 
+                        "created_by_fk": 1, 
+                        "verbose_name": null, 
+                        "id": 4, 
+                        "changed_on": {
+                            "__datetime__": "2018-10-08T14:29:27"
+                        }
+                    }
+                }, 
+                "database_id": 4, 
+                "datasource_name": "cube_value"
+            }
+        }
+    ]
+}
