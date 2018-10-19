@@ -1,2 +1,2 @@
 # superset
-for user who first use superset
+this page will tell you how to use superset
