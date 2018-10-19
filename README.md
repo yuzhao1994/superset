@@ -1,2 +1,2 @@
 # superset
-for user first use superset
+for user who first use superset
